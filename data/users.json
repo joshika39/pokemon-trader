@@ -1,0 +1,18 @@
+{
+    "0": {
+        "id": 0,
+        "name": "John Doe",
+        "username": "admin",
+        "password": "admin",
+        "balance": 0,
+        "cards": []
+    },
+    "65a58790e79cd": {
+        "username": "joshika39",
+        "password": "joshua",
+        "name": "Joshua Hegedus",
+        "balance": 1000,
+        "id": "65a58790e79cd",
+        "cards": []
+    }
+}

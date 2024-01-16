@@ -13,8 +13,26 @@
         "password": "joshua",
         "name": "Joshua Hegedus",
         "email": "josh.hegedus@outlook.com",
-        "balance": 1000,
+        "balance": 147.60000000000002,
         "id": "65a58790e79cd",
-        "cards": []
+        "cards": {
+            "6": "65a704a0143f7",
+            "7": 6,
+            "8": 7,
+            "9": 4,
+            "10": "65a6b714565e6"
+        }
+    },
+    "65a70773e8a72": {
+        "username": "joshika45",
+        "password": "joshua",
+        "email": "jhegedus9+tidal@gmail.com",
+        "name": "Joshua Hegedus",
+        "balance": 502.5,
+        "cards": {
+            "1": 0,
+            "2": 2
+        },
+        "id": "65a70773e8a72"
     }
 }

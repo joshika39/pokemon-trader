@@ -77,3 +77,16 @@
     margin-top: -5px;
     padding-bottom: 15px;
 }
+
+.buy.resell {
+    background-color: rgb(243, 111, 111);
+}
+
+.buy.sold {
+    background-color: rgb(122, 122, 122);
+    cursor: not-allowed;
+}
+
+.buy.own {
+    background-color: rgb(71, 143, 71);
+}

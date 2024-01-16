@@ -162,3 +162,11 @@ form > input {
     margin: 5px 0;
     padding: 5px;
 }
+
+.buy button {
+    all: unset;
+}
+
+.buy {
+    margin: 0;
+}

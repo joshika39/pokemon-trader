@@ -7,6 +7,8 @@ require("db/stores.php");
 
 $users = new UserStorage();
 
+$errors = [];
+
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -19,7 +21,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
         exit();
     }
     else{
-        echo "Hibás felhasználónév vagy jelszó!";
+        $errors[] = "Hibás felhasználónév vagy jelszó!";
     }
 }
 
@@ -38,6 +40,14 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 </header>
 <div id="content">
     <form action="login.php" method="post">
+        <?php if(count($errors) > 0){ ?>
+            <div class="errors">
+                <?php foreach($errors as $error){ ?>
+                    <div class="error"><?php echo $error ?></div>
+                <?php } ?>
+
+            </div>
+        <?php } ?>
         <label for="username">Felhasználónév</label>
         <input type="text" name="username" id="username">
         <label for="password">Jelszó</label>

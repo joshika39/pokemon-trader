@@ -1,5 +1,5 @@
-[
-    {
+{
+    "0": {
         "id": 0,
         "name": "Pikachu",
         "type": "electric",
@@ -9,9 +9,9 @@
         "price": 160,
         "description": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.",
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/025.png",
-      "bought": false
+        "bought": false
     },
-    {
+    "1": {
         "id": 1,
         "name": "Charizard",
         "type": "fire",
@@ -23,7 +23,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/006.png",
         "bought": false
     },
-    {
+    "2": {
         "id": 2,
         "name": "Bulbasaur",
         "type": "grass",
@@ -35,7 +35,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/001.png",
         "bought": false
     },
-    {
+    "3": {
         "id": 3,
         "name": "Squirtle",
         "type": "water",
@@ -47,7 +47,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/007.png",
         "bought": false
     },
-    {
+    "4": {
         "id": 4,
         "name": "Caterpie",
         "type": "bug",
@@ -59,7 +59,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/010.png",
         "bought": false
     },
-    {
+    "5": {
         "id": 5,
         "name": "Weedle",
         "type": "bug",
@@ -71,7 +71,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/013.png",
         "bought": false
     },
-    {
+    "6": {
         "id": 6,
         "name": "Pidgey",
         "type": "normal",
@@ -83,7 +83,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/016.png",
         "bought": false
     },
-    {
+    "7": {
         "id": 7,
         "name": "Rattata",
         "type": "normal",
@@ -95,7 +95,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/019.png",
         "bought": false
     },
-    {
+    "8": {
         "id": 8,
         "name": "Spearow",
         "type": "normal",
@@ -107,7 +107,7 @@
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/021.png",
         "bought": false
     },
-    {
+    "9": {
         "id": 9,
         "name": "Ekans",
         "type": "poison",
@@ -118,5 +118,16 @@
         "description": "Moves silently and stealthily. Eats the eggs of birds, such as PIDGEY and SPEAROW, whole.",
         "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/023.png",
         "bought": false
+    },
+    "65a6b714565e6": {
+        "name": "Noe",
+        "hp": "23",
+        "attack": "34",
+        "defense": "65",
+        "type": "fire",
+        "description": "A cool PM",
+        "price": "80",
+        "image": "https:\/\/assets.pokemon.com\/assets\/cms2\/img\/pokedex\/full\/384.png",
+        "id": "65a6b714565e6"
     }
-]
+}

@@ -6,10 +6,11 @@ require "db/stores.php";
 
 $users = new UserStorage();
 
-if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["name"])) {
+if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["name"]) && isset($_POST["email"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
     $name = $_POST["name"];
+    $email = $_POST["email"];
 
     $user = $users->findOne(["username" => $username]);
 
@@ -17,7 +18,7 @@ if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["name
         echo "A felhasználónév már foglalt!";
     }
     else{
-        $users->add(["username" => $username, "password" => $password, "name" => $name, "balance" => 1000, "cards" => []]);
+        $users->add(["username" => $username, "password" => $password, "email" => $email, "name" => $name, "balance" => 1000, "cards" => []]);
         header("Location: login.php");
         exit();
     }
@@ -40,6 +41,8 @@ if (isset($_POST["username"]) && isset($_POST["password"]) && isset($_POST["name
     <form action="register.php" method="post">
         <label for="username">Felhasználónév</label>
         <input type="text" name="username" id="username">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
         <label for="password">Jelszó</label>
         <input type="password" name="password" id="password">
         <label for="name">Név</label>

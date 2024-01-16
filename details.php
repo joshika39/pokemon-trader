@@ -1,6 +1,14 @@
 <?php
 
 require("db/stores.php");
+session_start();
+
+$isLoggedIn = isset($_SESSION["user"]);
+
+if(!$isLoggedIn){
+    header("Location: login.php");
+    exit();
+}
 
 $cards = new CardsStorage();
 $id = $_GET["id"];
@@ -29,10 +37,19 @@ $description = $card["description"];
 <body>
 <header>
     <h1><a href="index.php">IKémon</a> > <?php echo $name ?></h1>
+    <ul>
+        <?php if ($isLoggedIn) { ?>
+            <li><a class="btn outline" href="profile.php"><?php echo $_SESSION["user"] ?></a></li>
+            <li><a class="btn" href="logout.php">Kijelentkezés</a></li>
+        <?php } else { ?>
+            <li><a class="btn" href="login.php">Bejelentkezés</a></li>
+            <li><a class="btn" href="register.php">Regisztráció</a></li>
+        <?php } ?>
+    </ul>
 </header>
 <div id="content">
     <div id="details">
-        <div class="image clr-electric">
+        <div class="image clr-<?php echo $type ?>">
             <img src="<?php echo $image ?>" alt="">
         </div>
         <div class="info">

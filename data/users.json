@@ -4,6 +4,7 @@
         "name": "John Doe",
         "username": "admin",
         "password": "admin",
+        "email": "admin@asd.com",
         "balance": 0,
         "cards": []
     },
@@ -11,6 +12,7 @@
         "username": "joshika39",
         "password": "joshua",
         "name": "Joshua Hegedus",
+        "email": "josh.hegedus@outlook.com",
         "balance": 1000,
         "id": "65a58790e79cd",
         "cards": []

@@ -86,6 +86,50 @@ header {
     background-color: var(--clr-main);
     color: var(--clr-white);
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    align-self: center;
+}
+
+.btn {
+    background-color: var(--clr-main);
+    border: 1px solid var(--clr-white);
+    border-radius: 4px;
+    color: var(--clr-white);
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+}
+
+.btn.outline {
+    border: none;
+    color: var(--clr-white);
+    text-decoration: underline;
+}
+
+.btn.outline:hover {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    text-decoration: double underline;
 }
 
 header h1 a {
@@ -102,4 +146,19 @@ footer {
     color: var(--clr-white);
     padding: 10px;
     text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+form {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form > input {
+    margin: 5px 0;
+    padding: 5px;
 }

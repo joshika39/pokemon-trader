@@ -23,14 +23,13 @@ $isLoggedIn = isset($_SESSION["user"]);
 <body>
 <header>
     <h1><a href="index.php">IKémon</a> > Home</h1>
-    <nav>
         <ul>
             <?php if ($isLoggedIn) { ?>
-                <li><a href="profile.php"><?php echo $_SESSION["user"] ?>: Felhasználó részletek</a></li>
-                <li><a href="logout.php">Kijelentkezés</a></li>
+                <li><a class="btn outline" href="profile.php"><?php echo $_SESSION["user"] ?></a></li>
+                <li><a class="btn" href="logout.php">Kijelentkezés</a></li>
             <?php } else { ?>
-                <li><a href="login.php">Bejelentkezés</a></li>
-                <li><a href="register.php">Regisztráció</a></li>
+                <li><a class="btn" href="login.php">Bejelentkezés</a></li>
+                <li><a class="btn" href="register.php">Regisztráció</a></li>
             <?php } ?>
         </ul>
 </header>
@@ -50,7 +49,7 @@ $isLoggedIn = isset($_SESSION["user"]);
             $price = $card["price"];
             ?>
             <div class="pokemon-card">
-                <div class="image clr-electric">
+                <div class="image clr-<?php echo $type ?>">
                     <img src="<?php echo $image ?>" alt="">
                 </div>
                 <div class="details">
